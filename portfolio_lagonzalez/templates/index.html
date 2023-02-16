@@ -4,18 +4,20 @@
 {%block content%}
 
 {% load static %}
-
-<section class "beige">
+<link rel="stylesheet" href="{% static 'index.css' %}">
+<section id="about" class="about">
+    <div class="beige">
     <h2>LagonzalezDev.About_me</h2>
-    <img src="{%static 'portfolio/girl_developer.png'%}" alt="girl">
+    <img src="{%static 'portfolio/girl_developer.png'%}" class="img-responsive" alt="girl">
     <p>Desarrolladora fullstack con experiencia experiencia en el análisis de requerimientos
     y ejecución de pruebas de software. Apasionada por el diseño y desarrollo de aplicaciones 
     web intuitivas y eficientes. Gran habilidad en la implementación de soluciones escalables y mantenibles. 
     Gran pasión por aprender y mantenerse actualizada en las últimas tendencias en tecnología. 
     Con comunicación asertiva, trabajo en equipo y orientada al detalle.</p>
+</div>
 </section>
 
-<section>
+<section id="skills" class="skills">
     <h2>LagonzalezDev.Skills</h2>
     <img src="{%static 'portfolio/figma.png'%}" alt="figma logo">
     <img src="{%static 'portfolio/html.png' %}" alt="html logo">
@@ -34,9 +36,9 @@
     <img src="{%static 'portfolio/github.png'%}" alt="github logo">
     <img src="{%static 'portfolio/wordpress.png' %}" alt="wordpress logo">
 </section>
-<section class="beige">
-{%for project in projects%}
+<section id="project" class="beige">
 <div class="grid text-center">
+    {%for project in projects%}
     <div class="g-col-6 g-col-md-4"><h2>{{ project.title}}</h2>
         <p>{{ project.description}}<p>
         

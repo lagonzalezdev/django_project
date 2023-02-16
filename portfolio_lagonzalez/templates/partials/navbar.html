@@ -1,23 +1,21 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <span class="navbar-text fw-bold">
-            &lt;FULLSTACK SOFTWARE DEVELOPER&gt;
-        </span>
-        <div class="image"><img src="{%static 'portfolio/binary.png'%}" alt="binary logo"></div>
-            <span class="navbar-text fw-bold">
-                &lt;/Lagonzalezdev&gt;
-            </span>
-            <li class="nav-item fw-bold">
-            <a class="nav-link active" aria-current="page" href="#">ABOUT ME</a>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand col-6 p-3">&lt; SOFTWARE <br> FULLSTACK <br>DEVELOPER &gt;</a>
+        <ul class="navbar-nav">
+            <div class=" d-flex direction-column container" style="background-image: url('/static/portfolio/bin.png');">
+                <a class="navbar-brand">&lt;/LaGonzalezDev&gt;</a>
+            </div>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT ME</a>
             </li>
-            <li class="nav-item fw-bold">
-            <a class="nav-link" href="#">SKILLS</a>
+            <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
             </li>
-            <li class="nav-item fw-bold">
-            <a class="nav-link" href="#">PORTFOLIO</a>
+            <li class="nav-item">
+            <a class="nav-link" href="#project">PROJECT</a>
             </li>
         </ul>
-    </div>
+    
     </div>
 </nav>

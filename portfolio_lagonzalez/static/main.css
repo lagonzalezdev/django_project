@@ -1,4 +1,4 @@
-body {
+body, footer{
     width: 100%;
     height: 100%;
     background: linear-gradient(300deg,#5c7cab,#34747b,#d8a95e,#2488a4);
@@ -18,14 +18,6 @@ body {
     }
   }
 
-.image {
-    width: 55px;
-    height: 15%;
-  }
-
-  navbar-text fw-bold{
-    text-align: center;
-  }
 .beige {
-  background-color: #D4C4AE;
+  background: #D4C4AE;
 }
