@@ -21,3 +21,6 @@ body, footer{
 .beige {
   background: #D4C4AE;
 }
+.skills{
+  height: max-content;
+}

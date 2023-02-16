@@ -4,39 +4,59 @@
 {%block content%}
 
 {% load static %}
-<link rel="stylesheet" href="{% static 'index.css' %}">
+<link rel="stylesheet" href="{% static 'main.css' %}">
 <section id="about" class="about">
     <div class="beige">
-    <h2>LagonzalezDev.About_me</h2>
-    <img src="{%static 'portfolio/girl_developer.png'%}" class="img-responsive" alt="girl">
-    <p>Desarrolladora fullstack con experiencia experiencia en el análisis de requerimientos
-    y ejecución de pruebas de software. Apasionada por el diseño y desarrollo de aplicaciones 
-    web intuitivas y eficientes. Gran habilidad en la implementación de soluciones escalables y mantenibles. 
-    Gran pasión por aprender y mantenerse actualizada en las últimas tendencias en tecnología. 
-    Con comunicación asertiva, trabajo en equipo y orientada al detalle.</p>
-</div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="text-center">LagonzalezDev.About_me</h1>
+                <img src="{%static 'portfolio/girl_developer.png'%}" alt="girl" class="img-fluid mx-auto d-block">
+            </div>
+        <div class="col-md-6">
+            <p class="text-justify h6">Desarrolladora fullstack con experiencia experiencia en el análisis de requerimientos y ejecución de pruebas de software. Apasionada por el diseño y desarrollo de aplicaciones web intuitivas y eficientes. Gran habilidad en la implementación de soluciones escalables y mantenibles. Gran pasión por aprender y mantenerse actualizada en las últimas tendencias en tecnología. Con comunicación asertiva, trabajo en equipo y orientada al detalle.</p>
+        </div>
+        </div>
+    </div>
 </section>
 
 <section id="skills" class="skills">
-    <h2>LagonzalezDev.Skills</h2>
-    <img src="{%static 'portfolio/figma.png'%}" alt="figma logo">
-    <img src="{%static 'portfolio/html.png' %}" alt="html logo">
-    <img src="{%static 'portfolio/css.png' %}" alt="css logo">
-    <img src="{%static 'portfolio/sass.png'%}" alt="sass logo">
-    <img src="{%static 'portfolio/javascript.png'%}" alt="javascript logo">
-    <img src="{%static 'portfolio/angular.png'%}" alt="angular logo">
-    <img src="{%static 'portfolio/npm.png'%}" alt="npm logo">
-    <img src="{%static 'portfolio/node.png' %}" alt="node logo">
-    <img src="{%static 'portfolio/ts.png'%}" alt="ts logo">
-    <img src="{%static 'portfolio/git.png' %}" alt="git logo">
-    <img src="{%static 'portfolio/python.png' %}" alt="python logo">
-    <img src="{%static 'portfolio/sql.png' %}" alt="sql logo">
-    <img src="{%static 'portfolio/fastapi.png' %}" alt="fastapi logo">
-    <img src="{%static 'portfolio/django.png'%}" alt="django logo">
-    <img src="{%static 'portfolio/github.png'%}" alt="github logo">
-    <img src="{%static 'portfolio/wordpress.png' %}" alt="wordpress logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="{%static 'portfolio/figma.png'%}" alt="figma logo">
+                <img src="{%static 'portfolio/html.png' %}" alt="html logo">
+                <img src="{%static 'portfolio/css.png' %}" alt="css logo">
+                <img src="{%static 'portfolio/sass.png'%}" alt="sass logo">
+            </div>
+            <div class="col-md-3">
+                <img src="{%static 'portfolio/javascript.png'%}" alt="javascript logo">
+                <img src="{%static 'portfolio/angular.png'%}" alt="angular logo">
+                <img src="{%static 'portfolio/npm.png'%}" alt="npm logo">
+                <img src="{%static 'portfolio/node.png' %}" alt="node logo">
+            </div>
+            <div class="col-md-3">
+                <img src="{%static 'portfolio/ts.png'%}" alt="ts logo">
+                <img src="{%static 'portfolio/git.png' %}" alt="git logo">
+                <img src="{%static 'portfolio/python.png' %}" alt="python logo">
+                <img src="{%static 'portfolio/sql.png' %}" alt="sql logo">
+            </div>
+            <div class="col-md-3">
+                <img src="{%static 'portfolio/fastapi.png' %}" alt="fastapi logo">
+                <img src="{%static 'portfolio/django.png'%}" alt="django logo">
+                <img src="{%static 'portfolio/github.png'%}" alt="github logo">
+                <img src="{%static 'portfolio/wordpress.png' %}" alt="wordpress logo">
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">LagonzalezDev.About_me</h1>
+            </div>
+        </div>
+        </div>
 </section>
 <section id="project" class="beige">
+    <div class="col-md-12">
+        <h1 class="text-center">LagonzalezDev.Porfolio</h1>
+    </div>
 <div class="grid text-center">
     {%for project in projects%}
     <div class="g-col-6 g-col-md-4"><h2>{{ project.title}}</h2>
